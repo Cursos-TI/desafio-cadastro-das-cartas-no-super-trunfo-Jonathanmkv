@@ -29,5 +29,14 @@ int main() {
 
         printf("\n --- DADOS DA SUA CIDADE ---\n");
 
+        printf("O seu estado é: %s \n", Estado); // imprime o nome do estado
+        printf("O código da sua carta é: %s \n", codigo_da_carta); // imprime o código da carta
+        printf("O nome da sua cidade é: %s \n", nome_da_cidade);   // imprime o nome da cidade
+        printf("População: %d \n", populacao); // imprime o tomanho da populacao
+        printf("Área: %f \n", area);
+        printf("PIB: %f \n", pib); 
+        printf("O número de pontos turísticos são: %d \n", numero_de_pontos_turisticos);
+
+
     return 0;
 }
