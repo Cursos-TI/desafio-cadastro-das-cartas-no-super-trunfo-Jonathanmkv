@@ -7,24 +7,24 @@ int main() {
     float area, pib;
 
         printf("Digite o nome do seu estado: \n");
-        scanf("%s", Estado);
+        scanf(" %[^\n]", Estado);
 
         printf("Digite o código da carta \n");
-        scanf("%s", codigo_da_carta);
+        scanf(" %[^\n]", codigo_da_carta);
 
         printf("Digite o nome da sua cidade: \n");
-        scanf("%s", nome_da_cidade);
+        scanf(" %[^\n]", nome_da_cidade);
 
-        printf("Digite o número de habitantes da sua cidade: \n");
+        printf("Digite o número de habitantes da sua cidade: (SOMENTE NÚMEROS) \n");
         scanf("%d", &populacao);
 
-        printf("Digite o número de pontos turisticos do seu estado: \n");
+        printf("Digite o número de pontos turisticos do seu estado: (SOMENTE NÚMEROS) \n");
         scanf("%d", &numero_de_pontos_turisticos);
 
         printf("Digite a Área: \n");
         scanf("%f", &area);
 
-        print("Digite o PiB do seu estado: \n");
+        printf("Digite o PiB do seu estado: \n");
         scanf("%f", &pib);
 
         printf("\n --- DADOS DA SUA CIDADE ---\n");
