@@ -26,7 +26,7 @@ int main() {
 
         printf("Digite o PIB do seu estado em reais: (SOMENTE NÚMEROS) \n");
         scanf("%f", &pib);
-
+        
         float densidade = (float) populacao / area;
         float pib_per_capita = (float) pib / populacao;
 
