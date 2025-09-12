@@ -24,7 +24,7 @@ int main() {
         printf("Digite a Área em km²: (SOMENTE NÚMEROS) \n");
         scanf("%f", &area);
 
-        printf("Digite o PIB do seu estado em bilhões de reais: (SOMENTE NÚMEROS) \n");
+        printf("Digite o PIB do seu estado em reais: (SOMENTE NÚMEROS) \n");
         scanf("%f", &pib);
 
         float densidade = (float) populacao / area;
@@ -40,7 +40,7 @@ int main() {
         printf("PIB: %2.f \n", pib); 
         printf("O número de pontos turísticos são: %d \n", numero_de_pontos_turisticos);
         printf("A densidade populacional é %f hab/km² \n", densidade);
-        printf("PIB per capita: R$ %f \n", pib_per_capita);
+        printf("PIB per capita: R$ %2.f \n", pib_per_capita);
 
     return 0;
 }
