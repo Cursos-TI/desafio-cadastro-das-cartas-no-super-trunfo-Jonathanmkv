@@ -29,7 +29,7 @@ int main() {
 
     float densidade = (float) populacao / area; // calcula a densidade populacional da primera carta
     float pib_per_capita = (float) pib / populacao; // calcula o PIB per capita da primeira carta
-    long double superpoder = (double) populacao + numero_de_pontos_turisticos + area + pib + pib_per_capita + 1 / densidade;
+    long double superpoder = (double) populacao + numero_de_pontos_turisticos + area + pib + pib_per_capita + (1.0 / densidade);
     
         
     char Estado2[30], codigo_da_carta2[50], nome_da_cidade2[40];
@@ -59,7 +59,7 @@ int main() {
 
         float densidade2 = (float) populacao2 / area2; // calcula o a densidade populacional da segunda carta
         float pib_per_capita2 = (float) pib2 / populacao2; // calcula o PIB per capita da segunda carta
-        long double superpoder2 = (double) populacao2 + numero_de_pontos_turisticos2 + area2 + pib2 + pib_per_capita2 + 1 / densidade2;
+        long double superpoder2 = (double) populacao2 + numero_de_pontos_turisticos2 + area2 + pib2 + pib_per_capita2 + (1.0 / densidade2);
 
         printf("\n --- PRIMEIRA CARTA ---\n");
 
@@ -88,13 +88,13 @@ int main() {
         printf("O super poder desta carta é: %lf pontos \n", superpoder2);
 
         printf("\n --- RESULTADO --- \n"); //COMPARAÇÃO ENTRE AS CARTAS
-        printf("População: A carta vencedora é: %d \n", (populacao > populacao2) ? nome_da_cidade : (populacao < populacao2) ? nome_da_cidade2 : "EMPATE");
-        printf("Área: A Carta vencedora é: %f \n"), (area > area2) ? nome_da_cidade : (area < area2) ? nome_da_cidade2 : "EMPATE";
-        printf("PIB: A Carta vencedora é: %f \n"), (pib > pib2) ? nome_da_cidade : (pib < pib2) ? nome_da_cidade2 : "EMPATE";
-        printf("Pontos turísticos: A carta vencedora é: %d \n"), (numero_de_pontos_turisticos > numero_de_pontos_turisticos2) ? nome_da_cidade : (numero_de_pontos_turisticos < numero_de_pontos_turisticos2) ? nome_da_cidade2 : "EMPATE";
-        printf("Densidade populacional: A carta vencedora é: \n"), (densidade < densidade2) ? nome_da_cidade : (densidade > densidade2) ? nome_da_cidade2 : "EMPATE";
-        printf("PIB per Capita: A carta vencedora é: %f \n"), (pib_per_capita > pib_per_capita2) ? nome_da_cidade : (pib_per_capita < pib_per_capita2) ? nome_da_cidade2 : "EMPATE";
-        printf("Super Poder: A carta vencedora é: %lf \n"), (superpoder > superpoder2) ? nome_da_cidade : (superpoder < superpoder2) ? nome_da_cidade2 : "EMPATE";
+        printf("População: A carta vencedora é: %s \n", (populacao > populacao2) ? nome_da_cidade : (populacao < populacao2) ? nome_da_cidade2 : "EMPATE");
+        printf("Área: A Carta vencedora é: %s \n", (area > area2) ? nome_da_cidade : (area < area2) ? nome_da_cidade2 : "EMPATE");
+        printf("PIB: A Carta vencedora é: %s \n", (pib > pib2) ? nome_da_cidade : (pib < pib2) ? nome_da_cidade2 : "EMPATE");
+        printf("Pontos turísticos: A carta vencedora é: %s \n", (numero_de_pontos_turisticos > numero_de_pontos_turisticos2) ? nome_da_cidade : (numero_de_pontos_turisticos < numero_de_pontos_turisticos2) ? nome_da_cidade2 : "EMPATE");
+        printf("Densidade populacional: A carta vencedora é: %s \n", (densidade < densidade2) ? nome_da_cidade : (densidade > densidade2) ? nome_da_cidade2 : "EMPATE");
+        printf("PIB per Capita: A carta vencedora é: %s \n", (pib_per_capita > pib_per_capita2) ? nome_da_cidade : (pib_per_capita < pib_per_capita2) ? nome_da_cidade2 : "EMPATE");
+        printf("Super Poder: A carta vencedora é: %s \n", (superpoder > superpoder2) ? nome_da_cidade : (superpoder < superpoder2) ? nome_da_cidade2 : "EMPATE");
 
     return 0;
 }
